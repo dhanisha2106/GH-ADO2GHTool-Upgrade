@@ -9,13 +9,13 @@ The [GitHub Enterprise Importer](https://docs.github.com/en/migrations/using-git
 >
 >
 >    Discover repos
-      ↓
+      ->
    Queue migration (server-side)
-      ↓
+      ->
    Wait for completion
-      ↓
+      ->
   Apply branch policies (client-side)
-      ↓
+      ->
   Recreate abandoned PRs (client-side)
 
 
