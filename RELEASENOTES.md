@@ -1,0 +1,5 @@
+- **New `ado2gh migrate-pull-requests` command**: Migrates abandoned Azure DevOps Pull Requests to GitHub. GitHub's migration API already migrates active and completed PRs but excludes abandoned PRs. This command fills that gap by migrating abandoned PRs (by default) after the main repo migration completes, preserving original metadata and comments in PR descriptions.
+- **New `ado2gh migrate-branch-policies` command**: Automatically migrates Azure DevOps branch policies to GitHub branch protection rules. Transforms reviewer requirements, build validation policies, and comment resolution requirements to their GitHub equivalents. Includes comprehensive error handling for permissions, plan limitations, and network issues.
+- Fixed `ado2gh generate-script --download-migration-logs` to generate valid commands using `--target-api-url` that work with the `ado2gh download-logs` command
+- Added `--target-api-url` support to `ado2gh download-logs` and `bbs2gh download-logs` commands for GHEC data residency scenarios
+- Maintained backward compatibility: `--github-api-url` continues to work as an alias for `--target-api-url` in `ado2gh` and `bbs2gh` CLIs
