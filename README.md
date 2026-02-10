@@ -6,6 +6,16 @@
 The [GitHub Enterprise Importer](https://docs.github.com/en/migrations/using-github-enterprise-importer) (GEI, formerly Octoshift) is a highly customizable API-first migration offering designed to help you move your enterprise to GitHub Enterprise Cloud. The GEI-CLI wraps the GEI APIs as a cross-platform console application to simplify customizing your migration experience. Also added the Abandom PR and Branch policy migration 
 
 > GEI is generally available for repository migrations originating from Azure DevOps or GitHub that target GitHub Enterprise Cloud. It is in public beta for repository migrations from BitBucket Server and Data Center to GitHub Enterprise Cloud.
+> Discover repos
+      ↓
+Queue migration (server-side)
+      ↓
+Wait for completion
+      ↓
+Apply branch policies (client-side)
+      ↓
+Recreate abandoned PRs (client-side)
+
 
 ## Using the GEI CLI
  
